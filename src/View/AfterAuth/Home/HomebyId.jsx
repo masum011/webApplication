@@ -5,8 +5,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 export default function HomebyId() {
   const dispatch = useDispatch();
-  const { data } = useSelector((state) => state.home);
-  const { state, loading } = useLocation();
+  const { data,loading } = useSelector((state) => state.home);
+  const { state } = useLocation();
   const { userId } = state;
 
   const navigate = useNavigate();
